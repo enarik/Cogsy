@@ -145,7 +145,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-7X-PDi">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="r/vinyl">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -155,6 +155,16 @@
                                     <segue destination="Y7X-yM-rZo" kind="show" id="Bub-ob-gkZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbc-tV-QWa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="craigslist">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="240" y="89" width="61" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -162,6 +172,7 @@
                                 <exclude reference="U7u-6M-2J9"/>
                                 <exclude reference="aiR-06-9l4"/>
                                 <exclude reference="UKd-7X-PDi"/>
+                                <exclude reference="bbc-tV-QWa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -169,6 +180,7 @@
                                 <include reference="U7u-6M-2J9"/>
                                 <include reference="aiR-06-9l4"/>
                                 <include reference="UKd-7X-PDi"/>
+                                <include reference="bbc-tV-QWa"/>
                             </mask>
                         </variation>
                     </view>
@@ -177,6 +189,83 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8r-SY-HtX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1464" y="360"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GGB-f5-cT6">
+            <objects>
+                <viewController id="z94-HR-TKC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A2B-Vb-aUJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="M6A-ln-mkG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KKk-WN-K5C">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3g-me-vzV">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="780"/>
+                                </variation>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="O3g-me-vzV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="O3g-me-vzV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZ1-Rt-SXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2364" y="360"/>
+        </scene>
+        <!--Craigslist View Controller-->
+        <scene sceneID="piG-X6-5Cm">
+            <objects>
+                <viewController id="4lG-UW-2KN" customClass="CraigslistViewController" customModule="Cogsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n0e-hj-DM6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ocq-v3-REB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UhA-gd-JuQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2w7-4I-WMI" customClass="CLWebView" customModule="Cogsy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="780"/>
+                                </variation>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2w7-4I-WMI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2w7-4I-WMI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="clView" destination="2w7-4I-WMI" id="Bo7-K4-wtK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mP7-9N-GLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2364" y="1058.25"/>
         </scene>
         <!--Vinyl View Controller-->
         <scene sceneID="Go4-8P-7NT">
@@ -187,6 +276,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2ce-qc-kjX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Sa-0P-Vhf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbv-Ph-pPq" customClass="RVinylButtonLink" customModule="Cogsy" customModuleProvider="target">
@@ -215,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bUs-gs-Eqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2164.5" y="360"/>
+            <point key="canvasLocation" x="2377.5" y="-320.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
