@@ -14,6 +14,12 @@
 		B9321AD71A8A73C6006A8D11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9321AD61A8A73C6006A8D11 /* Images.xcassets */; };
 		B9321ADA1A8A73C6006A8D11 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9321AD81A8A73C6006A8D11 /* LaunchScreen.xib */; };
 		B9321AE61A8A73C6006A8D11 /* CogsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9321AE51A8A73C6006A8D11 /* CogsyTests.swift */; };
+		B9321AF31A8A7685006A8D11 /* DSC01415.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B9321AEF1A8A7685006A8D11 /* DSC01415.JPG */; };
+		B9321AF41A8A7685006A8D11 /* DSC01416.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B9321AF01A8A7685006A8D11 /* DSC01416.JPG */; };
+		B9321AF51A8A7685006A8D11 /* DSC01417.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B9321AF11A8A7685006A8D11 /* DSC01417.JPG */; };
+		B9321AF61A8A7685006A8D11 /* IMG_0205.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B9321AF21A8A7685006A8D11 /* IMG_0205.JPG */; };
+		B9321AF81A8A799F006A8D11 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9321AF71A8A799F006A8D11 /* ThirdViewController.swift */; };
+		B9321AFA1A8A79B7006A8D11 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9321AF91A8A79B7006A8D11 /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		B9321ADF1A8A73C6006A8D11 /* CogsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CogsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9321AE41A8A73C6006A8D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9321AE51A8A73C6006A8D11 /* CogsyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CogsyTests.swift; sourceTree = "<group>"; };
+		B9321AEF1A8A7685006A8D11 /* DSC01415.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC01415.JPG; sourceTree = "<group>"; };
+		B9321AF01A8A7685006A8D11 /* DSC01416.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC01416.JPG; sourceTree = "<group>"; };
+		B9321AF11A8A7685006A8D11 /* DSC01417.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC01417.JPG; sourceTree = "<group>"; };
+		B9321AF21A8A7685006A8D11 /* IMG_0205.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0205.JPG; sourceTree = "<group>"; };
+		B9321AF71A8A799F006A8D11 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		B9321AF91A8A79B7006A8D11 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,8 @@
 				B9321ACD1A8A73C6006A8D11 /* AppDelegate.swift */,
 				B9321ACF1A8A73C6006A8D11 /* FirstViewController.swift */,
 				B9321AD11A8A73C6006A8D11 /* SecondViewController.swift */,
+				B9321AF71A8A799F006A8D11 /* ThirdViewController.swift */,
+				B9321AF91A8A79B7006A8D11 /* FourthViewController.swift */,
 				B9321AD31A8A73C6006A8D11 /* Main.storyboard */,
 				B9321AD61A8A73C6006A8D11 /* Images.xcassets */,
 				B9321AD81A8A73C6006A8D11 /* LaunchScreen.xib */,
@@ -93,6 +107,10 @@
 		B9321ACB1A8A73C6006A8D11 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B9321AEF1A8A7685006A8D11 /* DSC01415.JPG */,
+				B9321AF01A8A7685006A8D11 /* DSC01416.JPG */,
+				B9321AF11A8A7685006A8D11 /* DSC01417.JPG */,
+				B9321AF21A8A7685006A8D11 /* IMG_0205.JPG */,
 				B9321ACC1A8A73C6006A8D11 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,6 +213,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9321AF31A8A7685006A8D11 /* DSC01415.JPG in Resources */,
+				B9321AF61A8A7685006A8D11 /* IMG_0205.JPG in Resources */,
+				B9321AF41A8A7685006A8D11 /* DSC01416.JPG in Resources */,
+				B9321AF51A8A7685006A8D11 /* DSC01417.JPG in Resources */,
 				B9321AD51A8A73C6006A8D11 /* Main.storyboard in Resources */,
 				B9321ADA1A8A73C6006A8D11 /* LaunchScreen.xib in Resources */,
 				B9321AD71A8A73C6006A8D11 /* Images.xcassets in Resources */,
@@ -217,7 +239,9 @@
 			files = (
 				B9321AD21A8A73C6006A8D11 /* SecondViewController.swift in Sources */,
 				B9321ACE1A8A73C6006A8D11 /* AppDelegate.swift in Sources */,
+				B9321AF81A8A799F006A8D11 /* ThirdViewController.swift in Sources */,
 				B9321AD01A8A73C6006A8D11 /* FirstViewController.swift in Sources */,
+				B9321AFA1A8A79B7006A8D11 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
