@@ -20,6 +20,8 @@
 		B9321AF61A8A7685006A8D11 /* IMG_0205.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B9321AF21A8A7685006A8D11 /* IMG_0205.JPG */; };
 		B9321AF81A8A799F006A8D11 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9321AF71A8A799F006A8D11 /* ThirdViewController.swift */; };
 		B9321AFA1A8A79B7006A8D11 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9321AF91A8A79B7006A8D11 /* FourthViewController.swift */; };
+		B9BD09511A8A801200FC5492 /* RVinylButtonLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD09501A8A801200FC5492 /* RVinylButtonLink.swift */; };
+		B9BD09531A8A8E9800FC5492 /* RVinylViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD09521A8A8E9800FC5492 /* RVinylViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		B9321AF21A8A7685006A8D11 /* IMG_0205.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0205.JPG; sourceTree = "<group>"; };
 		B9321AF71A8A799F006A8D11 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		B9321AF91A8A79B7006A8D11 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		B9BD09501A8A801200FC5492 /* RVinylButtonLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVinylButtonLink.swift; sourceTree = "<group>"; };
+		B9BD09521A8A8E9800FC5492 /* RVinylViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVinylViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				B9321AD11A8A73C6006A8D11 /* SecondViewController.swift */,
 				B9321AF71A8A799F006A8D11 /* ThirdViewController.swift */,
 				B9321AF91A8A79B7006A8D11 /* FourthViewController.swift */,
+				B9BD09501A8A801200FC5492 /* RVinylButtonLink.swift */,
+				B9BD09521A8A8E9800FC5492 /* RVinylViewController.swift */,
 				B9321AD31A8A73C6006A8D11 /* Main.storyboard */,
 				B9321AD61A8A73C6006A8D11 /* Images.xcassets */,
 				B9321AD81A8A73C6006A8D11 /* LaunchScreen.xib */,
@@ -242,6 +248,8 @@
 				B9321AF81A8A799F006A8D11 /* ThirdViewController.swift in Sources */,
 				B9321AD01A8A73C6006A8D11 /* FirstViewController.swift in Sources */,
 				B9321AFA1A8A79B7006A8D11 /* FourthViewController.swift in Sources */,
+				B9BD09511A8A801200FC5492 /* RVinylButtonLink.swift in Sources */,
+				B9BD09531A8A8E9800FC5492 /* RVinylViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +441,7 @@
 				B9321AEB1A8A73C6006A8D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9321AEC1A8A73C6006A8D11 /* Build configuration list for PBXNativeTarget "CogsyTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +450,7 @@
 				B9321AEE1A8A73C6006A8D11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
