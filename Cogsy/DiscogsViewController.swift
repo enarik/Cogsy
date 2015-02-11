@@ -28,6 +28,23 @@ class DiscogsViewController: UIViewController {
     }
     
     
+    @IBAction func stop(AnyObject) {
+        DiscogsButtonLink.stopLoading(<#UIWebView#>)
+    }
+    
+    @IBAction func doRefresh(AnyObject) {
+        DiscogsButtonLink.reload(<#UIWebView#>)
+    }
+    
+    @IBAction func goBack(AnyObject) {
+        DiscogsButtonLink.goBack(<#UIWebView#>)
+    }
+    
+    @IBAction func goForward(AnyObject) {
+        DiscogsButtonLink.goForward(<#UIWebView#>)
+    }
+    
+    
     /*
     // MARK: - Navigation
     

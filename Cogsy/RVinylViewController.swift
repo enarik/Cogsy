@@ -26,8 +26,23 @@ class RVinylViewController: UIViewController {
             super.didReceiveMemoryWarning()
             // Dispose of any resources that can be recreated.
         }
-        
-        
+    
+    @IBAction func stop(sender: AnyObject) {
+        RVinylButtonLink.stopLoading(<#UIWebView#>)
+    }
+
+    @IBAction func doRefresh(sender: AnyObject) {
+        RVinylButtonLink.reload(<#UIWebView#>)
+    }
+
+    @IBAction func goBack(sender: AnyObject) {
+        RVinylButtonLink.goBack(<#UIWebView#>)
+    }
+    
+    @IBAction func goForward(sender: AnyObject) {
+        RVinylButtonLink.goForward(<#UIWebView#>)
+    }
+    
         /*
         // MARK: - Navigation
         

@@ -27,6 +27,22 @@ class CraigslistViewController: UIViewController {
         // Dispose of any resources that can be recreated.
 }
 
+    @IBAction func stop(sender: AnyObject) {
+        CLWebView.stopLoading(<#UIWebView#>)
+    }
+    
+    @IBAction func doRefresh(sender: AnyObject) {
+        CLWebView.reload(<#UIWebView#>)
+    }
+    
+    @IBAction func goBack(sender: AnyObject) {
+        CLWebView.goBack(<#UIWebView#>)
+    }
+    
+    @IBAction func goForward(sender: AnyObject) {
+        CLWebView.goForward(<#UIWebView#>)
+    }
+    
 
 /*
 // MARK: - Navigation
