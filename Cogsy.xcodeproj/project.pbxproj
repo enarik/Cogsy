@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B903F3591A8AD57A00353F5C /* DiscogsButtonLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B903F3581A8AD57A00353F5C /* DiscogsButtonLink.swift */; };
+		B903F35B1A8AD5C100353F5C /* DiscogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B903F35A1A8AD5C100353F5C /* DiscogsViewController.swift */; };
 		B91216A41A8AAFE700185520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B91216A21A8AAFE700185520 /* Main.storyboard */; };
 		B9321ACE1A8A73C6006A8D11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9321ACD1A8A73C6006A8D11 /* AppDelegate.swift */; };
 		B9321AD01A8A73C6006A8D11 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9321ACF1A8A73C6006A8D11 /* FirstViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B903F3581A8AD57A00353F5C /* DiscogsButtonLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscogsButtonLink.swift; sourceTree = "<group>"; };
+		B903F35A1A8AD5C100353F5C /* DiscogsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscogsViewController.swift; sourceTree = "<group>"; };
 		B91216A31A8AAFE700185520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9321AC81A8A73C6006A8D11 /* Cogsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cogsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9321ACC1A8A73C6006A8D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				B9BD09521A8A8E9800FC5492 /* RVinylViewController.swift */,
 				B9BD09561A8AADA800FC5492 /* CLWebView.swift */,
 				B9BD09541A8A987F00FC5492 /* CraigslistViewController.swift */,
+				B903F3581A8AD57A00353F5C /* DiscogsButtonLink.swift */,
+				B903F35A1A8AD5C100353F5C /* DiscogsViewController.swift */,
 				B91216A21A8AAFE700185520 /* Main.storyboard */,
 				B9321AD61A8A73C6006A8D11 /* Images.xcassets */,
 				B9321AD81A8A73C6006A8D11 /* LaunchScreen.xib */,
@@ -251,6 +257,8 @@
 			files = (
 				B9321AD21A8A73C6006A8D11 /* SecondViewController.swift in Sources */,
 				B9321ACE1A8A73C6006A8D11 /* AppDelegate.swift in Sources */,
+				B903F35B1A8AD5C100353F5C /* DiscogsViewController.swift in Sources */,
+				B903F3591A8AD57A00353F5C /* DiscogsButtonLink.swift in Sources */,
 				B9321AF81A8A799F006A8D11 /* ThirdViewController.swift in Sources */,
 				B9321AD01A8A73C6006A8D11 /* FirstViewController.swift in Sources */,
 				B9321AFA1A8A79B7006A8D11 /* FourthViewController.swift in Sources */,

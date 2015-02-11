@@ -12,13 +12,13 @@ class RVinylViewController: UIViewController {
     
         
     @IBOutlet weak var vinylView: RVinylButtonLink!
-        
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             let requestURL = NSURL(string: "http://reddit.com/r/vinyl")
             let request = NSURLRequest(URL: requestURL!)
             vinylView.loadRequest(request)
-            
+        
             // Do any additional setup after loading the view.
         }
         

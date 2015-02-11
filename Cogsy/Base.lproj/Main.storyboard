@@ -149,7 +149,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="114" y="89" width="42" height="30"/>
+                                    <rect key="frame" x="179" y="89" width="42" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="Y7X-yM-rZo" kind="show" id="Bub-ob-gkZ"/>
@@ -162,8 +162,24 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="240" y="89" width="61" height="30"/>
+                                    <rect key="frame" x="170" y="127" width="61" height="30"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="4lG-UW-2KN" kind="show" id="mBd-4J-U4l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oL1-5F-YiR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Discogs">
+                                    <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="172" y="165" width="56" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="z94-HR-TKC" kind="show" id="lDy-7N-VoB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -173,6 +189,7 @@
                                 <exclude reference="aiR-06-9l4"/>
                                 <exclude reference="UKd-7X-PDi"/>
                                 <exclude reference="bbc-tV-QWa"/>
+                                <exclude reference="oL1-5F-YiR"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -181,6 +198,7 @@
                                 <include reference="aiR-06-9l4"/>
                                 <include reference="UKd-7X-PDi"/>
                                 <include reference="bbc-tV-QWa"/>
+                                <include reference="oL1-5F-YiR"/>
                             </mask>
                         </variation>
                     </view>
@@ -190,10 +208,10 @@
             </objects>
             <point key="canvasLocation" x="1464" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--Discogs View Controller-->
         <scene sceneID="GGB-f5-cT6">
             <objects>
-                <viewController id="z94-HR-TKC" sceneMemberID="viewController">
+                <viewController id="z94-HR-TKC" customClass="DiscogsViewController" customModule="Cogsy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A2B-Vb-aUJ"/>
                         <viewControllerLayoutGuide type="bottom" id="M6A-ln-mkG"/>
@@ -202,7 +220,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3g-me-vzV">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3g-me-vzV" customClass="DiscogsButtonLink" customModule="Cogsy" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -222,6 +240,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="discogsView" destination="O3g-me-vzV" id="4Cv-A0-5mn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZ1-Rt-SXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,7 +260,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2w7-4I-WMI" customClass="CLWebView" customModule="Cogsy" customModuleProvider="target">
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2w7-4I-WMI" customClass="CLWebView" customModule="Cogsy" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -279,7 +300,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbv-Ph-pPq" customClass="RVinylButtonLink" customModule="Cogsy" customModuleProvider="target">
+                            <webView contentMode="scaleAspectFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hbv-Ph-pPq" customClass="RVinylButtonLink" customModule="Cogsy" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">

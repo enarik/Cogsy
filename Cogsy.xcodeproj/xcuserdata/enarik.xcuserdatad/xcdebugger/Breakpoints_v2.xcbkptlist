@@ -25,7 +25,7 @@
                   symbolName = "Cogsy.CraigslistViewController.clView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;Cogsy.CLWebView&gt;"
                   moduleName = "Cogsy"
                   urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/CraigslistViewController.swift"
-                  timestampString = "445297255.457197"
+                  timestampString = "445307662.129707"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -39,7 +39,7 @@
                   symbolName = "Cogsy.CraigslistViewController.clView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;Cogsy.CLWebView&gt;"
                   moduleName = "Cogsy"
                   urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/CraigslistViewController.swift"
-                  timestampString = "445297255.45735"
+                  timestampString = "445307662.129893"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -53,7 +53,7 @@
                   symbolName = "Cogsy.CraigslistViewController.init (Cogsy.CraigslistViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Cogsy.CraigslistViewController"
                   moduleName = "Cogsy"
                   urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/CraigslistViewController.swift"
-                  timestampString = "445297255.457498"
+                  timestampString = "445307662.13007"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -67,7 +67,7 @@
                   symbolName = "Cogsy.CraigslistViewController.init (Cogsy.CraigslistViewController.Type)() -&gt; Cogsy.CraigslistViewController"
                   moduleName = "Cogsy"
                   urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/CraigslistViewController.swift"
-                  timestampString = "445297255.457643"
+                  timestampString = "445307662.130246"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -81,7 +81,7 @@
                   symbolName = "Cogsy.CraigslistViewController.init (Cogsy.CraigslistViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Cogsy.CraigslistViewController"
                   moduleName = "Cogsy"
                   urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/CraigslistViewController.swift"
-                  timestampString = "445297255.457879"
+                  timestampString = "445307662.130425"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -102,7 +102,97 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
-            endingLineNumber = "40">
+            endingLineNumber = "40"
+            landmarkName = "CraigslistViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Cogsy/RVinylViewController.swift"
+            timestampString = "445307167.695691"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "RVinylViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cogsy.RVinylViewController.vinylView.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;Cogsy.RVinylButtonLink&gt;"
+                  moduleName = "Cogsy"
+                  urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/RVinylViewController.swift"
+                  timestampString = "445307662.132808"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cogsy.RVinylViewController.vinylView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;Cogsy.RVinylButtonLink&gt;"
+                  moduleName = "Cogsy"
+                  urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/RVinylViewController.swift"
+                  timestampString = "445307662.133054"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cogsy.RVinylViewController.init (Cogsy.RVinylViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Cogsy.RVinylViewController"
+                  moduleName = "Cogsy"
+                  urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/RVinylViewController.swift"
+                  timestampString = "445307662.133528"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "53">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cogsy.RVinylViewController.init (Cogsy.RVinylViewController.Type)() -&gt; Cogsy.RVinylViewController"
+                  moduleName = "Cogsy"
+                  urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/RVinylViewController.swift"
+                  timestampString = "445307662.133789"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Cogsy.RVinylViewController.init (Cogsy.RVinylViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Cogsy.RVinylViewController"
+                  moduleName = "Cogsy"
+                  urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/RVinylViewController.swift"
+                  timestampString = "445307662.133955"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
