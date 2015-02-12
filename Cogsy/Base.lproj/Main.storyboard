@@ -226,44 +226,79 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Qz-j3-dcf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="4Z4-W1-NzG">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goBack:" destination="z94-HR-TKC" id="oda-yL-HV6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="pDr-bu-kki">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goForward:" destination="z94-HR-TKC" id="Cd7-3W-0os"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EMB-ks-vfb"/>
+                                    <barButtonItem systemItem="refresh" id="p76-BU-LhI">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="doRefresh:" destination="z94-HR-TKC" id="D5V-dY-ga4"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="yZx-73-qQd">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="stop:" destination="z94-HR-TKC" id="hT4-Sz-DOR"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9Qz-j3-dcf" firstAttribute="trailing" secondItem="O3g-me-vzV" secondAttribute="trailing" id="6gZ-BS-f4h"/>
+                            <constraint firstItem="9Qz-j3-dcf" firstAttribute="bottom" secondItem="M6A-ln-mkG" secondAttribute="top" id="7AI-5x-vCW"/>
                             <constraint firstItem="O3g-me-vzV" firstAttribute="bottom" secondItem="KKk-WN-K5C" secondAttribute="bottomMargin" id="Cve-1q-DrY"/>
                             <constraint firstItem="O3g-me-vzV" firstAttribute="leading" secondItem="KKk-WN-K5C" secondAttribute="leadingMargin" constant="-16" id="NlX-Qf-Icp"/>
+                            <constraint firstItem="9Qz-j3-dcf" firstAttribute="leading" secondItem="O3g-me-vzV" secondAttribute="leading" id="OEH-42-wsb"/>
                             <constraint firstItem="O3g-me-vzV" firstAttribute="top" secondItem="A2B-Vb-aUJ" secondAttribute="bottom" id="j0J-IL-leH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="O3g-me-vzV" secondAttribute="trailing" constant="-16" id="zUa-Eg-7ri"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="O3g-me-vzV"/>
+                                <exclude reference="9Qz-j3-dcf"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Cve-1q-DrY"/>
                                 <exclude reference="NlX-Qf-Icp"/>
                                 <exclude reference="j0J-IL-leH"/>
                                 <exclude reference="zUa-Eg-7ri"/>
+                                <exclude reference="6gZ-BS-f4h"/>
+                                <exclude reference="7AI-5x-vCW"/>
+                                <exclude reference="OEH-42-wsb"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="O3g-me-vzV"/>
+                                <include reference="9Qz-j3-dcf"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Cve-1q-DrY"/>
                                 <include reference="NlX-Qf-Icp"/>
                                 <include reference="j0J-IL-leH"/>
                                 <include reference="zUa-Eg-7ri"/>
+                                <include reference="6gZ-BS-f4h"/>
+                                <include reference="7AI-5x-vCW"/>
+                                <include reference="OEH-42-wsb"/>
                             </mask>
                         </variation>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Exit" id="TKt-2z-Xq1"/>
-                        <barButtonItem title="Refresh" id="FpW-IU-f5U"/>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="gVn-aA-Svz"/>
-                        <barButtonItem title="Back" id="tGD-RY-g9R"/>
-                        <barButtonItem title="Fwd" id="nqu-Ko-V9E"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="discogsView" destination="O3g-me-vzV" id="4Cv-A0-5mn"/>
@@ -389,60 +424,79 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqo-xz-1dV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="DVn-M1-lYw">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goBack:" destination="Y7X-yM-rZo" id="4KM-Bh-RdM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="S9y-8U-eom">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goForward:" destination="Y7X-yM-rZo" id="xMS-pC-bTL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mZo-XK-SLn"/>
+                                    <barButtonItem systemItem="refresh" id="lcP-BG-Z3E">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="doRefresh:" destination="Y7X-yM-rZo" id="ThY-Zk-Ylh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="OPs-Bd-poR">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="stop:" destination="Y7X-yM-rZo" id="y2P-Ro-GP1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="hbv-Ph-pPq" secondAttribute="trailing" constant="-16" id="0nQ-p2-XuL"/>
                             <constraint firstItem="hbv-Ph-pPq" firstAttribute="leading" secondItem="1Sa-0P-Vhf" secondAttribute="leadingMargin" constant="-16" id="E3e-GR-Ev0"/>
+                            <constraint firstItem="nqo-xz-1dV" firstAttribute="leading" secondItem="hbv-Ph-pPq" secondAttribute="leading" id="GT8-8c-0u1"/>
+                            <constraint firstItem="nqo-xz-1dV" firstAttribute="bottom" secondItem="2ce-qc-kjX" secondAttribute="top" id="cun-P4-oMY"/>
                             <constraint firstItem="hbv-Ph-pPq" firstAttribute="bottom" secondItem="1Sa-0P-Vhf" secondAttribute="bottomMargin" id="h3N-TF-lKr"/>
                             <constraint firstItem="hbv-Ph-pPq" firstAttribute="top" secondItem="Zau-ha-COT" secondAttribute="bottom" id="ncw-6o-jUe"/>
+                            <constraint firstItem="nqo-xz-1dV" firstAttribute="trailing" secondItem="hbv-Ph-pPq" secondAttribute="trailing" id="q5a-oO-Gcw"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="hbv-Ph-pPq"/>
+                                <exclude reference="nqo-xz-1dV"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="0nQ-p2-XuL"/>
                                 <exclude reference="E3e-GR-Ev0"/>
                                 <exclude reference="h3N-TF-lKr"/>
                                 <exclude reference="ncw-6o-jUe"/>
+                                <exclude reference="GT8-8c-0u1"/>
+                                <exclude reference="cun-P4-oMY"/>
+                                <exclude reference="q5a-oO-Gcw"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="hbv-Ph-pPq"/>
+                                <include reference="nqo-xz-1dV"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="0nQ-p2-XuL"/>
                                 <include reference="E3e-GR-Ev0"/>
                                 <include reference="h3N-TF-lKr"/>
                                 <include reference="ncw-6o-jUe"/>
+                                <include reference="GT8-8c-0u1"/>
+                                <include reference="cun-P4-oMY"/>
+                                <include reference="q5a-oO-Gcw"/>
                             </mask>
                         </variation>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Exit" id="1Wv-oJ-gVK">
-                            <connections>
-                                <action selector="stop:" destination="Y7X-yM-rZo" id="lBw-L6-WIo"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem title="Refresh" id="SIh-iY-NNP">
-                            <connections>
-                                <action selector="doRefresh:" destination="Y7X-yM-rZo" id="Dg3-HB-TU6"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="HVd-1X-lf7"/>
-                        <barButtonItem title="Back" id="oAb-p4-7QG">
-                            <connections>
-                                <action selector="goBack:" destination="Y7X-yM-rZo" id="dr2-d4-uBi"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem title="Fwd" id="G8o-Dh-Qev">
-                            <connections>
-                                <action selector="goForward:" destination="Y7X-yM-rZo" id="TIM-Q6-ypD"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="vinylView" destination="hbv-Ph-pPq" id="fMY-i0-MH8"/>
