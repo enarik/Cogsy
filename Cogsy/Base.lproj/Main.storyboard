@@ -299,32 +299,37 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem systemItem="fastForward" id="tOU-QH-g9w">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="goForward:" destination="4lG-UW-2KN" id="6Ve-xa-Klm"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dIN-10-u8T"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dIN-10-u8T">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="refresh" id="eTn-Kp-uts">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="doRefresh:" destination="4lG-UW-2KN" id="Ry6-18-eRw"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem systemItem="stop" id="UXT-gU-Mab">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="stop:" destination="4lG-UW-2KN" id="GG2-6H-UjT"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="756" width="402" height="44"/>
-                                </variation>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2w7-4I-WMI" firstAttribute="leading" secondItem="UhA-gd-JuQ" secondAttribute="leadingMargin" constant="-16" id="ATc-c5-wbd"/>
+                            <constraint firstItem="DQz-Ih-sWQ" firstAttribute="leading" secondItem="2w7-4I-WMI" secondAttribute="leading" id="JbT-Ne-ns5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DQz-Ih-sWQ" secondAttribute="trailing" constant="-18" id="JfF-Hy-gI7"/>
                             <constraint firstItem="2w7-4I-WMI" firstAttribute="top" secondItem="n0e-hj-DM6" secondAttribute="bottom" id="PI2-xu-G2i"/>
                             <constraint firstItem="2w7-4I-WMI" firstAttribute="bottom" secondItem="UhA-gd-JuQ" secondAttribute="bottomMargin" id="Ydu-DO-gDb"/>
+                            <constraint firstItem="DQz-Ih-sWQ" firstAttribute="bottom" secondItem="Ocq-v3-REB" secondAttribute="top" id="ogx-kX-KPR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2w7-4I-WMI" secondAttribute="trailing" constant="-16" id="wff-6S-aJn"/>
                         </constraints>
                         <variation key="default">
@@ -337,6 +342,9 @@
                                 <exclude reference="PI2-xu-G2i"/>
                                 <exclude reference="Ydu-DO-gDb"/>
                                 <exclude reference="wff-6S-aJn"/>
+                                <exclude reference="JbT-Ne-ns5"/>
+                                <exclude reference="JfF-Hy-gI7"/>
+                                <exclude reference="ogx-kX-KPR"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -349,6 +357,9 @@
                                 <include reference="PI2-xu-G2i"/>
                                 <include reference="Ydu-DO-gDb"/>
                                 <include reference="wff-6S-aJn"/>
+                                <include reference="JbT-Ne-ns5"/>
+                                <include reference="JfF-Hy-gI7"/>
+                                <include reference="ogx-kX-KPR"/>
                             </mask>
                         </variation>
                     </view>
