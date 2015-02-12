@@ -29,19 +29,19 @@ class DiscogsViewController: UIViewController {
     
     
     @IBAction func stop(sender: AnyObject) {
-        DiscogsButtonLink.stopLoading(<#UIWebView#>)
+      
     }
     
     @IBAction func doRefresh(sender: AnyObject) {
-        DiscogsButtonLink.reload(<#UIWebView#>)
+      
     }
     
     @IBAction func goBack(sender: AnyObject) {
-        DiscogsButtonLink.goBack(<#UIWebView#>)
+       
     }
     
     @IBAction func goForward(sender: AnyObject) {
-        DiscogsButtonLink.goForward(<#UIWebView#>)
+        
     }
     
     

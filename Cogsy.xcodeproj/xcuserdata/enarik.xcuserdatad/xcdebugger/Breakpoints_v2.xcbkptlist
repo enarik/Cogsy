@@ -6,86 +6,86 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cogsy/CraigslistViewController.swift"
-            timestampString = "445297156.189069"
+            timestampString = "445404641.985771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "CraigslistViewController"
             landmarkType = "3">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Cogsy.CraigslistViewController.clView.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;Cogsy.CLWebView&gt;"
                   moduleName = "Cogsy"
                   urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/CraigslistViewController.swift"
-                  timestampString = "445307662.129707"
+                  timestampString = "445405632.926246"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Cogsy.CraigslistViewController.clView.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;Cogsy.CLWebView&gt;"
                   moduleName = "Cogsy"
                   urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/CraigslistViewController.swift"
-                  timestampString = "445307662.129893"
+                  timestampString = "445405632.926416"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
                   offsetFromSymbolStart = "16">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Cogsy.CraigslistViewController.init (Cogsy.CraigslistViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; Cogsy.CraigslistViewController"
                   moduleName = "Cogsy"
                   urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/CraigslistViewController.swift"
-                  timestampString = "445307662.13007"
+                  timestampString = "445405632.926575"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
                   offsetFromSymbolStart = "53">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Cogsy.CraigslistViewController.init (Cogsy.CraigslistViewController.Type)() -&gt; Cogsy.CraigslistViewController"
                   moduleName = "Cogsy"
                   urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/CraigslistViewController.swift"
-                  timestampString = "445307662.130246"
+                  timestampString = "445405632.926732"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
                   offsetFromSymbolStart = "24">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Cogsy.CraigslistViewController.init (Cogsy.CraigslistViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; Cogsy.CraigslistViewController"
                   moduleName = "Cogsy"
                   urlString = "file:///Users/enarik/Desktop/enarik%20inc/iOS/Cogsy/Cogsy/CraigslistViewController.swift"
-                  timestampString = "445307662.130425"
+                  timestampString = "445405632.926882"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
@@ -98,11 +98,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Cogsy/CraigslistViewController.swift"
-            timestampString = "445297103.058388"
+            timestampString = "445405406.627571"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "CraigslistViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -193,22 +193,6 @@
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Cogsy/CraigslistViewController.swift"
-            timestampString = "445311681.066772"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "goForward(_:)"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -270,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZ1-Rt-SXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2364" y="360"/>
+            <point key="canvasLocation" x="2364" y="208"/>
         </scene>
         <!--Craigslist View Controller-->
         <scene sceneID="piG-X6-5Cm">
@@ -288,6 +289,36 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQz-Ih-sWQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="apW-nr-1wx">
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="goBack:" destination="4lG-UW-2KN" id="iSu-hG-zdv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="fastForward" id="tOU-QH-g9w">
+                                        <connections>
+                                            <action selector="goForward:" destination="4lG-UW-2KN" id="6Ve-xa-Klm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dIN-10-u8T"/>
+                                    <barButtonItem systemItem="refresh" id="eTn-Kp-uts">
+                                        <connections>
+                                            <action selector="doRefresh:" destination="4lG-UW-2KN" id="Ry6-18-eRw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="UXT-gU-Mab">
+                                        <connections>
+                                            <action selector="stop:" destination="4lG-UW-2KN" id="GG2-6H-UjT"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="756" width="402" height="44"/>
+                                </variation>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -299,6 +330,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="2w7-4I-WMI"/>
+                                <exclude reference="DQz-Ih-sWQ"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="ATc-c5-wbd"/>
@@ -310,6 +342,7 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="2w7-4I-WMI"/>
+                                <include reference="DQz-Ih-sWQ"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="ATc-c5-wbd"/>
@@ -319,29 +352,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Exit" id="zB7-a9-VY1">
-                            <connections>
-                                <action selector="stop:" destination="4lG-UW-2KN" id="naP-6g-trD"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem title="Refresh" id="14I-ip-IrG">
-                            <connections>
-                                <action selector="doRefresh:" destination="4lG-UW-2KN" id="njr-25-tbU"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="n2a-gg-B0e"/>
-                        <barButtonItem title="Back" id="2A1-Wt-afJ">
-                            <connections>
-                                <action selector="goBack:" destination="4lG-UW-2KN" id="pWw-dN-7ZC"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem title="Fwd" id="Fs6-Rf-CMM">
-                            <connections>
-                                <action selector="goForward:" destination="4lG-UW-2KN" id="8wJ-aE-Kp2"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="clView" destination="2w7-4I-WMI" id="Bo7-K4-wtK"/>
@@ -349,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mP7-9N-GLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2364" y="1058.25"/>
+            <point key="canvasLocation" x="2364" y="1051.5"/>
         </scene>
         <!--Vinyl View Controller-->
         <scene sceneID="Go4-8P-7NT">
@@ -428,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bUs-gs-Eqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2377.5" y="-320.25"/>
+            <point key="canvasLocation" x="2364" y="-628"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

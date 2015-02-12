@@ -7,9 +7,9 @@
 //
 
 import UIKit
+import WebKit
 
 class CraigslistViewController: UIViewController {
-    
     
     @IBOutlet weak var clView: CLWebView!
     
@@ -27,22 +27,20 @@ class CraigslistViewController: UIViewController {
         // Dispose of any resources that can be recreated.
 }
 
-    @IBAction func stop(sender: AnyObject) {
-        CLWebView.stopLoading(<#UIWebView#>)
-    }
-    
-    @IBAction func doRefresh(sender: AnyObject) {
-        CLWebView.reload(<#UIWebView#>)
-    }
     
     @IBAction func goBack(sender: AnyObject) {
-        CLWebView.goBack(<#UIWebView#>)
     }
+    
     
     @IBAction func goForward(sender: AnyObject) {
-        CLWebView.goForward(<#UIWebView#>)
     }
     
+    
+    @IBAction func doRefresh(sender: AnyObject) {
+    }
+    
+    @IBAction func stop(sender: AnyObject) {
+    }
 
 /*
 // MARK: - Navigation
