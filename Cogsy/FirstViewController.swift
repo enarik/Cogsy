@@ -51,12 +51,12 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     }
 
     // MARK: UITableViewDataSource
-    func tableView(tableView: UITableView,
+    func tableView(ownedTableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
             return ownedRecords.count
     }
     
-    func tableView(tableView: UITableView,
+    func tableView(ownedTableView: UITableView,
         cellForRowAtIndexPath
         indexPath: NSIndexPath) -> UITableViewCell {
             
