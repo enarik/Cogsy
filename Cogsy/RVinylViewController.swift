@@ -28,19 +28,19 @@ class RVinylViewController: UIViewController {
         }
     
     @IBAction func stop(sender: AnyObject) {
-        
+        vinylView.stopLoading()
     }
 
     @IBAction func doRefresh(sender: AnyObject) {
-        
+        vinylView.reload()
     }
 
     @IBAction func goBack(sender: AnyObject) {
-        
+        vinylView.goBack()
     }
     
     @IBAction func goForward(sender: AnyObject) {
-        
+        vinylView.goForward()
     }
     
         /*

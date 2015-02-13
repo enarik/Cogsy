@@ -28,21 +28,21 @@ class CraigslistViewController: UIViewController {
 
     
     @IBAction func goBack(sender: AnyObject) {
-        CLWebView.goBack(<#UIWebView#>)
+        clView.goBack()
     }
     
     
     @IBAction func goForward(sender: AnyObject) {
-        CLWebView.goForward(<#UIWebView#>)
+        clView.goForward()
     }
     
     
     @IBAction func doRefresh(sender: AnyObject) {
-        CLWebView.reload(<#UIWebView#>)
+        clView.reload()
     }
     
     @IBAction func stop(sender: AnyObject) {
-        CLWebView.stopLoading(<#UIWebView#>)
+        clView.stopLoading()
     }
 
 /*

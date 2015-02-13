@@ -29,19 +29,19 @@ class DiscogsViewController: UIViewController {
     
     
     @IBAction func stop(sender: AnyObject) {
-      
+        discogsView.stopLoading()
     }
     
     @IBAction func doRefresh(sender: AnyObject) {
-      
+        discogsView.reload()
     }
     
     @IBAction func goBack(sender: AnyObject) {
-       
+        discogsView.goBack()
     }
     
     @IBAction func goForward(sender: AnyObject) {
-        
+        discogsView.goForward()
     }
     
     

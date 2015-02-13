@@ -26,6 +26,8 @@
 		B9BD09531A8A8E9800FC5492 /* RVinylViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD09521A8A8E9800FC5492 /* RVinylViewController.swift */; };
 		B9BD09551A8A987F00FC5492 /* CraigslistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD09541A8A987F00FC5492 /* CraigslistViewController.swift */; };
 		B9BD09571A8AADA800FC5492 /* CLWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD09561A8AADA800FC5492 /* CLWebView.swift */; };
+		B9D30FA21A8D904A00D463DB /* Cogsy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9D30FA01A8D904A00D463DB /* Cogsy.xcdatamodeld */; };
+		B9E796CB1A8CF33D007FA5FD /* OwnedRecordItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E796CA1A8CF33D007FA5FD /* OwnedRecordItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,10 @@
 		B9BD09521A8A8E9800FC5492 /* RVinylViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVinylViewController.swift; sourceTree = "<group>"; };
 		B9BD09541A8A987F00FC5492 /* CraigslistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CraigslistViewController.swift; sourceTree = "<group>"; };
 		B9BD09561A8AADA800FC5492 /* CLWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWebView.swift; sourceTree = "<group>"; };
+		B9D30FA11A8D904A00D463DB /* Cogsy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cogsy.xcdatamodel; sourceTree = "<group>"; };
+		B9E796C81A8CF33D007FA5FD /* Cogsy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cogsy-Bridging-Header.h"; sourceTree = "<group>"; };
+		B9E796C91A8CF33D007FA5FD /* OwnedRecordItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnedRecordItem.h; sourceTree = "<group>"; };
+		B9E796CA1A8CF33D007FA5FD /* OwnedRecordItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnedRecordItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				B9321ACD1A8A73C6006A8D11 /* AppDelegate.swift */,
+				B9D30FA01A8D904A00D463DB /* Cogsy.xcdatamodeld */,
 				B9321ACF1A8A73C6006A8D11 /* FirstViewController.swift */,
 				B9321AD11A8A73C6006A8D11 /* SecondViewController.swift */,
 				B9321AF71A8A799F006A8D11 /* ThirdViewController.swift */,
@@ -112,12 +119,15 @@
 				B9BD09521A8A8E9800FC5492 /* RVinylViewController.swift */,
 				B9BD09561A8AADA800FC5492 /* CLWebView.swift */,
 				B9BD09541A8A987F00FC5492 /* CraigslistViewController.swift */,
+				B9E796C91A8CF33D007FA5FD /* OwnedRecordItem.h */,
+				B9E796CA1A8CF33D007FA5FD /* OwnedRecordItem.m */,
 				B903F3581A8AD57A00353F5C /* DiscogsButtonLink.swift */,
 				B903F35A1A8AD5C100353F5C /* DiscogsViewController.swift */,
 				B91216A21A8AAFE700185520 /* Main.storyboard */,
 				B9321AD61A8A73C6006A8D11 /* Images.xcassets */,
 				B9321AD81A8A73C6006A8D11 /* LaunchScreen.xib */,
 				B9321ACB1A8A73C6006A8D11 /* Supporting Files */,
+				B9E796C81A8CF33D007FA5FD /* Cogsy-Bridging-Header.h */,
 			);
 			path = Cogsy;
 			sourceTree = "<group>";
@@ -260,12 +270,14 @@
 				B903F35B1A8AD5C100353F5C /* DiscogsViewController.swift in Sources */,
 				B903F3591A8AD57A00353F5C /* DiscogsButtonLink.swift in Sources */,
 				B9321AF81A8A799F006A8D11 /* ThirdViewController.swift in Sources */,
+				B9D30FA21A8D904A00D463DB /* Cogsy.xcdatamodeld in Sources */,
 				B9321AD01A8A73C6006A8D11 /* FirstViewController.swift in Sources */,
 				B9321AFA1A8A79B7006A8D11 /* FourthViewController.swift in Sources */,
 				B9BD09551A8A987F00FC5492 /* CraigslistViewController.swift in Sources */,
 				B9BD09511A8A801200FC5492 /* RVinylButtonLink.swift in Sources */,
 				B9BD09571A8AADA800FC5492 /* CLWebView.swift in Sources */,
 				B9BD09531A8A8E9800FC5492 /* RVinylViewController.swift in Sources */,
+				B9E796CB1A8CF33D007FA5FD /* OwnedRecordItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,9 +400,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Cogsy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cogsy/Cogsy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -398,9 +413,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Cogsy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cogsy/Cogsy-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -469,6 +486,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B9D30FA01A8D904A00D463DB /* Cogsy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B9D30FA11A8D904A00D463DB /* Cogsy.xcdatamodel */,
+			);
+			currentVersion = B9D30FA11A8D904A00D463DB /* Cogsy.xcdatamodel */;
+			path = Cogsy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B9321AC01A8A73C6006A8D11 /* Project object */;
 }
