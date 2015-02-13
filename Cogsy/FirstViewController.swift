@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import CoreData
 
 class FirstViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var ownedTableView: UITableView!
     
-    var ownedRecords = [String]()
+    var ownedRecordsArray = [NSManagedObject]()
     
     @IBAction func addOwnedRecord(sender: AnyObject) {
         var alert = UIAlertController(title: "Record",
@@ -23,7 +24,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
             style: .Default) { (action: UIAlertAction!) -> Void in
                 
                 let textField = alert.textFields![0] as UITextField
-                self.ownedRecords.append(textField.text)
+                self.addOwnedRecord(textField.text)
                 self.ownedTableView.reloadData()
         }
         
@@ -53,7 +54,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
     // MARK: UITableViewDataSource
     func tableView(ownedTableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
-            return ownedRecords.count
+            return ownedRecordsArray.count
     }
     
     func tableView(ownedTableView: UITableView,
@@ -64,16 +65,84 @@ class FirstViewController: UIViewController, UITableViewDataSource {
             ownedTableView.dequeueReusableCellWithIdentifier("Cell")
                 as UITableViewCell
             
-            cell.textLabel!.text = ownedRecords[indexPath.row]
+            let OwnedRecords = ownedRecordsArray[indexPath.row]
+            cell.textLabel!.text = OwnedRecords.valueForKey("name") as String?
             
             return cell
     }
+    
+    
+    
+    
+    
+    func saveName(name: String) {
+        //1
+        let appDelegate =
+        UIApplication.sharedApplication().delegate as AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext!
+        
+        //2
+        let entity =  NSEntityDescription.entityForName("Person",
+            inManagedObjectContext:
+            managedContext)
+        
+        let ownedRecords = NSManagedObject(entity: entity!,
+            insertIntoManagedObjectContext:managedContext)
+        
+        //3
+        ownedRecords.setValue(name, forKey: "name")
+        
+        //4
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save \(error), \(error?.userInfo)")
+        }  
+        //5
+        ownedRecordsArray.append(ownedRecords)
+    }
+    
+    
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //1
+        let appDelegate =
+        UIApplication.sharedApplication().delegate as AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext!
+        
+        //2
+        let fetchRequest = NSFetchRequest(entityName:"Person")
+        
+        //3
+        var error: NSError?
+        
+        let fetchedResults =
+        managedContext.executeFetchRequest(fetchRequest,
+            error: &error) as [NSManagedObject]?
+        
+        if let results = fetchedResults {
+            ownedRecordsArray = results
+        } else {
+            println("Could not fetch \(error), \(error!.userInfo)")
+        }
+    }
+    
+    
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+    
 
 }
 
