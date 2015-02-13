@@ -70,9 +70,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
             
             return cell
     }
-    
-    
-    
+
     
     
     func saveName(name: String) {
@@ -83,7 +81,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         let managedContext = appDelegate.managedObjectContext!
         
         //2
-        let entity =  NSEntityDescription.entityForName("Person",
+        let entity =  NSEntityDescription.entityForName("OwnedRecords",
             inManagedObjectContext:
             managedContext)
         
@@ -115,7 +113,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         let managedContext = appDelegate.managedObjectContext!
         
         //2
-        let fetchRequest = NSFetchRequest(entityName:"Person")
+        let fetchRequest = NSFetchRequest(entityName:"OwnedRecords")
         
         //3
         var error: NSError?
