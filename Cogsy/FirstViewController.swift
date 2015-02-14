@@ -81,7 +81,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         let managedContext = appDelegate.managedObjectContext!
         
         //2
-        let entity =  NSEntityDescription.entityForName("OwnedRecords",
+        let entity =  NSEntityDescription.entityForName("OwnedRecordsNS",
             inManagedObjectContext:
             managedContext)
         
@@ -113,7 +113,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
         let managedContext = appDelegate.managedObjectContext!
         
         //2
-        let fetchRequest = NSFetchRequest(entityName:"OwnedRecords")
+        let fetchRequest = NSFetchRequest(entityName:"OwnedRecordsNS")
         
         //3
         var error: NSError?

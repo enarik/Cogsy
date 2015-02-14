@@ -52,6 +52,9 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="DXC-rt-WXE">
+                        <barButtonItem key="leftBarButtonItem" title="Import" id="MCd-7M-5Al">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add" id="yBw-8V-rFG">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
