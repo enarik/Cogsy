@@ -22,6 +22,7 @@
 		B9321AF61A8A7685006A8D11 /* IMG_0205.JPG in Resources */ = {isa = PBXBuildFile; fileRef = B9321AF21A8A7685006A8D11 /* IMG_0205.JPG */; };
 		B9321AF81A8A799F006A8D11 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9321AF71A8A799F006A8D11 /* ThirdViewController.swift */; };
 		B9321AFA1A8A79B7006A8D11 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9321AF91A8A79B7006A8D11 /* FourthViewController.swift */; };
+		B99D198A1A90D2F300ED7B5F /* OwnedRecordsNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99D19891A90D2F300ED7B5F /* OwnedRecordsNS.swift */; };
 		B9BD09511A8A801200FC5492 /* RVinylButtonLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD09501A8A801200FC5492 /* RVinylButtonLink.swift */; };
 		B9BD09531A8A8E9800FC5492 /* RVinylViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD09521A8A8E9800FC5492 /* RVinylViewController.swift */; };
 		B9BD09551A8A987F00FC5492 /* CraigslistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD09541A8A987F00FC5492 /* CraigslistViewController.swift */; };
@@ -60,6 +61,7 @@
 		B9321AF21A8A7685006A8D11 /* IMG_0205.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0205.JPG; sourceTree = "<group>"; };
 		B9321AF71A8A799F006A8D11 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		B9321AF91A8A79B7006A8D11 /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		B99D19891A90D2F300ED7B5F /* OwnedRecordsNS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnedRecordsNS.swift; sourceTree = "<group>"; usesTabs = 0; };
 		B9BD09501A8A801200FC5492 /* RVinylButtonLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVinylButtonLink.swift; sourceTree = "<group>"; };
 		B9BD09521A8A8E9800FC5492 /* RVinylViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVinylViewController.swift; sourceTree = "<group>"; };
 		B9BD09541A8A987F00FC5492 /* CraigslistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CraigslistViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			children = (
 				B9321ACD1A8A73C6006A8D11 /* AppDelegate.swift */,
 				B9D30FA01A8D904A00D463DB /* Cogsy.xcdatamodeld */,
+				B99D19891A90D2F300ED7B5F /* OwnedRecordsNS.swift */,
 				B9321ACF1A8A73C6006A8D11 /* FirstViewController.swift */,
 				B9321AD11A8A73C6006A8D11 /* SecondViewController.swift */,
 				B9321AF71A8A799F006A8D11 /* ThirdViewController.swift */,
@@ -278,6 +281,7 @@
 				B9BD09571A8AADA800FC5492 /* CLWebView.swift in Sources */,
 				B9BD09531A8A8E9800FC5492 /* RVinylViewController.swift in Sources */,
 				B9E796CB1A8CF33D007FA5FD /* OwnedRecordItem.m in Sources */,
+				B99D198A1A90D2F300ED7B5F /* OwnedRecordsNS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
