@@ -26,6 +26,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     // Create an empty array of LogItem's
     var oRLogItems = [OwnedRecordsNS]()
+    
+    var cell : UITableViewCell?
 
     
     override func viewDidLoad() {
@@ -69,8 +71,15 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Adjust it down by 20 points
         viewFrame.origin.y += 20
         
-        // Reduce the total height by 20 points
-        viewFrame.size.height -= 20
+        // Add in the "+" button at the bottom
+        let addButton = UIButton(frame: CGRectMake(0, UIScreen.mainScreen().bounds.size.height - 93, UIScreen.mainScreen().bounds.size.width, 44))
+        addButton.setTitle("+", forState: .Normal)
+        addButton.backgroundColor = UIColor(red: 0.5, green: 0.9, blue: 0.5, alpha: 1.0)
+        addButton.addTarget(self, action: "addNewItem", forControlEvents: .TouchUpInside)
+        self.view.addSubview(addButton)
+        
+        // Reduce the total height by 20 points for the status bar, and 44 points for the bottom button
+        viewFrame.size.height -= (93 + addButton.frame.size.height)
         
         // Set the logTableview's frame to equal our temporary variable with the full size of the view
         // adjusted to account for the status bar height
@@ -123,6 +132,86 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
+    
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if(editingStyle == .Delete ) {
+            // Find the LogItem object the user is trying to delete
+            let logItemToDelete = oRLogItems[indexPath.row]
+            
+            // Delete it from the managedObjectContext
+            managedObjectContext?.deleteObject(logItemToDelete)
+            
+            // Refresh the table view to indicate that it's deleted
+            self.fetchLog()
+            
+            // Tell the table view to animate out that row
+            oRTableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+            save()
+        }
+    }
+    
+    
+    
+    let addItemAlertViewTag = 0
+    let addItemTextAlertViewTag = 1
+    func addNewItem() {
+        
+        var titlePrompt = UIAlertController(title: "Enter Artist",
+            message: "Enter Text",
+            preferredStyle: .Alert)
+        
+        var titleTextField: UITextField?
+        titlePrompt.addTextFieldWithConfigurationHandler {
+            (textField) -> Void in
+            titleTextField = textField
+            textField.placeholder = "Title"
+        }
+        
+        titlePrompt.addAction(UIAlertAction(title: "Ok",
+            style: .Default,
+            handler: { (action) -> Void in
+                if let textField = titleTextField {
+                    self.saveNewItem(textField.text)
+                }
+        }))
+        
+        self.presentViewController(titlePrompt,
+            animated: true,
+            completion: nil)
+    }
+    
+    func saveNewItem(title : String) {
+        // Create the new  log item
+        var newLogItem = OwnedRecordsNS.createInManagedObjectContext(self.managedObjectContext!, artist: title, album: "")
+        
+        // Update the array containing the table view row data
+        self.fetchLog()
+        
+        // Animate in the new row
+        // Use Swift's find() function to figure out the index of the newLogItem
+        // after it's been added and sorted in our logItems array
+        if let newItemIndex = find(oRLogItems, newLogItem) {
+            // Create an NSIndexPath from the newItemIndex
+            let newLogItemIndexPath = NSIndexPath(forRow: newItemIndex, inSection: 0)
+            // Animate in the insertion of this row
+            oRTableView.insertRowsAtIndexPaths([ newLogItemIndexPath ], withRowAnimation: .Automatic)
+            save()
+        }
+    }
+    
+    func save() {
+        var error : NSError?
+        if(managedObjectContext!.save(&error) ) {
+            println(error?.localizedDescription)
+        }
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -146,6 +235,8 @@ class FirstViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.textLabel?.text = logItem.artist
         return cell
     }
+    
+    
     
     // MARK: UITableViewDelegate
     func oRtableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
