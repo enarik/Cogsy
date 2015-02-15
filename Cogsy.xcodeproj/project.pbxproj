@@ -28,7 +28,6 @@
 		B9BD09551A8A987F00FC5492 /* CraigslistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD09541A8A987F00FC5492 /* CraigslistViewController.swift */; };
 		B9BD09571A8AADA800FC5492 /* CLWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BD09561A8AADA800FC5492 /* CLWebView.swift */; };
 		B9D30FA21A8D904A00D463DB /* Cogsy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9D30FA01A8D904A00D463DB /* Cogsy.xcdatamodeld */; };
-		B9E796CB1A8CF33D007FA5FD /* OwnedRecordItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9E796CA1A8CF33D007FA5FD /* OwnedRecordItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,9 +66,6 @@
 		B9BD09541A8A987F00FC5492 /* CraigslistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CraigslistViewController.swift; sourceTree = "<group>"; };
 		B9BD09561A8AADA800FC5492 /* CLWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLWebView.swift; sourceTree = "<group>"; };
 		B9D30FA11A8D904A00D463DB /* Cogsy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cogsy.xcdatamodel; sourceTree = "<group>"; };
-		B9E796C81A8CF33D007FA5FD /* Cogsy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cogsy-Bridging-Header.h"; sourceTree = "<group>"; };
-		B9E796C91A8CF33D007FA5FD /* OwnedRecordItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnedRecordItem.h; sourceTree = "<group>"; };
-		B9E796CA1A8CF33D007FA5FD /* OwnedRecordItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnedRecordItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,15 +118,12 @@
 				B9BD09521A8A8E9800FC5492 /* RVinylViewController.swift */,
 				B9BD09561A8AADA800FC5492 /* CLWebView.swift */,
 				B9BD09541A8A987F00FC5492 /* CraigslistViewController.swift */,
-				B9E796C91A8CF33D007FA5FD /* OwnedRecordItem.h */,
-				B9E796CA1A8CF33D007FA5FD /* OwnedRecordItem.m */,
 				B903F3581A8AD57A00353F5C /* DiscogsButtonLink.swift */,
 				B903F35A1A8AD5C100353F5C /* DiscogsViewController.swift */,
 				B91216A21A8AAFE700185520 /* Main.storyboard */,
 				B9321AD61A8A73C6006A8D11 /* Images.xcassets */,
 				B9321AD81A8A73C6006A8D11 /* LaunchScreen.xib */,
 				B9321ACB1A8A73C6006A8D11 /* Supporting Files */,
-				B9E796C81A8CF33D007FA5FD /* Cogsy-Bridging-Header.h */,
 			);
 			path = Cogsy;
 			sourceTree = "<group>";
@@ -280,7 +273,6 @@
 				B9BD09511A8A801200FC5492 /* RVinylButtonLink.swift in Sources */,
 				B9BD09571A8AADA800FC5492 /* CLWebView.swift in Sources */,
 				B9BD09531A8A8E9800FC5492 /* RVinylViewController.swift in Sources */,
-				B9E796CB1A8CF33D007FA5FD /* OwnedRecordItem.m in Sources */,
 				B99D198A1A90D2F300ED7B5F /* OwnedRecordsNS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

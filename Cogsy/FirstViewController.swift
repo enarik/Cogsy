@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class FirstViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     lazy var managedObjectContext : NSManagedObjectContext? = {
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
@@ -24,10 +24,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // Create the table view as soon as this class loads
     var oRTableView = UITableView(frame: CGRectZero, style: .Plain)
     
-    
     // Create an empty array of LogItem's
-    var ownedRecordsLog = [OwnedRecordsNS]()
-    
+    var oRLogItems = [OwnedRecordsNS]()
 
     
     override func viewDidLoad() {
@@ -60,10 +58,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
         }
         
-        // This tells the table view that it should get it's data from this class, ViewController
-        oRTableView.dataSource = self
-        oRTableView.delegate = self
-        
         // Now that the view loaded, we have a frame for the view, which will be (0,0,screen width, screen height)
         // This is a good size for the table view as well, so let's use that
         // The only adjust we'll make is to move it down by 20 pixels, and reduce the size by 20 pixels
@@ -92,25 +86,42 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // This tells the table view that it should get it's data from this class, ViewController
         oRTableView.dataSource = self
         
-        fetchLog()
-    }
+        // This tells the table view that it should get it's data from this class, ViewController
+        oRTableView.dataSource = self
+        oRTableView.delegate = self
+        
+                fetchLog()
+        }
+        
+        func fetchLog() {
+            let fetchRequest = NSFetchRequest(entityName: "OwnedRecordsNS")
+            
+            // Create a sort descriptor object that sorts on the "title"
+            // property of the Core Data object
+            let sortDescriptor = NSSortDescriptor(key: "artist", ascending: true)
+            
+            // Set the list of sort descriptors in the fetch request,
+            // so it includes the sort descriptor
+            fetchRequest.sortDescriptors = [sortDescriptor]
+            
+            if let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [OwnedRecordsNS] {
+                oRLogItems = fetchResults
+            }
+        }
     
-    func fetchLog() {
+    func presentItemInfo() {
         let fetchRequest = NSFetchRequest(entityName: "OwnedRecordsNS")
-        
-        // Create a sort descriptor object that sorts on the "title"
-        // property of the Core Data object
-        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
-        
-        // Set the list of sort descriptors in the fetch request,
-        // so it includes the sort descriptor
-        fetchRequest.sortDescriptors = [sortDescriptor]
-        
         if let fetchResults = managedObjectContext!.executeFetchRequest(fetchRequest, error: nil) as? [OwnedRecordsNS] {
-            ownedRecordsLog = fetchResults
+            
+            let alert = UIAlertController(title: fetchResults[0].artist,
+                message: fetchResults[0].album,
+                preferredStyle: .Alert)
+            
+            self.presentViewController(alert,
+                animated: true,
+                completion: nil)
         }
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -122,25 +133,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // How many rows are there in this section?
         // There's only 1 section, and it has a number of rows
         // equal to the number of logItems, so return the count
-        return ownedRecordsLog.count
+        return oRLogItems.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("LogCell") as UITableViewCell
         
         // Get the LogItem for this index
-        let logItem = ownedRecordsLog[indexPath.row]
+        let logItem = oRLogItems[indexPath.row]
         
         // Set the title of the cell to be the title of the logItem
         cell.textLabel?.text = logItem.artist
         return cell
     }
-
+    
     // MARK: UITableViewDelegate
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let logItem = ownedRecordsLog[indexPath.row]
-        println(logItem.artist)
+    func oRtableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let logItem = oRLogItems[indexPath.row]
+        println(logItem.album)
     }
-
-
+    
 }

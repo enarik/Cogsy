@@ -16,7 +16,7 @@ class OwnedRecordsNS: NSManagedObject {
 
 
 class func createInManagedObjectContext(moc: NSManagedObjectContext, artist: String, album: String) -> OwnedRecordsNS {
-    let newItem = NSEntityDescription.insertNewObjectForEntityForName("Owned Records", inManagedObjectContext: moc) as OwnedRecordsNS
+    let newItem = NSEntityDescription.insertNewObjectForEntityForName("OwnedRecordsNS", inManagedObjectContext: moc) as OwnedRecordsNS
     newItem.artist = artist
     newItem.album = album
     
