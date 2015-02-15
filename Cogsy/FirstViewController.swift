@@ -73,7 +73,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
 
     
     
-    func saveName(name: String) {
+    func addOwnedRecord(name: String) {
         //1
         let appDelegate =
         UIApplication.sharedApplication().delegate as AppDelegate
@@ -85,11 +85,11 @@ class FirstViewController: UIViewController, UITableViewDataSource {
             inManagedObjectContext:
             managedContext)
         
-        let ownedRecords = NSManagedObject(entity: entity!,
+        let ownedRecordsInput = NSManagedObject(entity: entity!,
             insertIntoManagedObjectContext:managedContext)
         
         //3
-        ownedRecords.setValue(name, forKey: "name")
+        ownedRecordsInput.setValue(name, forKey: "name")
         
         //4
         var error: NSError?
@@ -97,7 +97,7 @@ class FirstViewController: UIViewController, UITableViewDataSource {
             println("Could not save \(error), \(error?.userInfo)")
         }  
         //5
-        ownedRecordsArray.append(ownedRecords)
+        ownedRecordsArray.append(ownedRecordsInput)
     }
     
     
