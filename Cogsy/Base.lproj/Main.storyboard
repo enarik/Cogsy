@@ -58,7 +58,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Add" id="yBw-8V-rFG">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="addOwnedRecord:" destination="9pv-A4-QxB" id="ZbN-pe-zu8"/>
+                                <action selector="addOwnedRecordButton:" destination="9pv-A4-QxB" id="TUs-wQ-m6D"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
